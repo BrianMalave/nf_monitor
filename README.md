@@ -1,6 +1,6 @@
 ## Niufoods Monitor
 
-este proyecto como prueba, respresenta un sistema centralizado de monitoreo para una franquicia de restaurantes, donde se reporta el estado de los dispositivos(POS, impresoras, red) que posee cada local a traves de una api general desarrollada en Ruby on Rails.
+este proyecto como prueba, representa un sistema centralizado de monitoreo para una franquicia de restaurantes, donde se reporta el estado de los dispositivos(POS, impresoras, red) que posee cada local a traves de una api general desarrollada en Ruby on Rails.
 
 - Arquitectura (diagrama): `docs/architecture.md`
 - Base de datos (ERD): `docs/database.md`
