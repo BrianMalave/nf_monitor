@@ -124,22 +124,22 @@ Tanto la aplicación backend de ruby y el frontend en react, estan alojados en e
 ## Ejecución de proyecto completo a traves de comandos:
 
 1. Backend y servidores de Rails
-bundle install
-bundle exec rails db:create db:migrate
-bundle exec rails s
+  - bundle install
+  - bundle exec rails db:create db:migrate
+  - bundle exec rails s
 
 2. Redis + Sidekiq
-docker run -d -p 6379:6379 --name redis7 redis:7
-bundle exec sidekiq
+  - docker run -d -p 6379:6379 --name redis7 redis:7
+  - bundle exec sidekiq
 
 3. Frontend(React Dashboard)
 Desde la carpeta raiz:
-cd frontend
-npm install
-npm run dev
+  - cd frontend
+  - npm install
+  - npm run dev
 
 4. Simulación
-ruby scripts/restaurant_simulator.rb
+  - ruby scripts/restaurant_simulator.rb
 
 Notas finales:
 - Uno de los enfoques de este proyecto fue separar responsabilidades entre el backend, jobs, la simulación y el frontend.
