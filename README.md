@@ -129,8 +129,10 @@ Tanto la aplicación backend de ruby y el frontend en react, estan alojados en e
   - bundle exec rails s
 
 2. Redis + Sidekiq
+  - docker ps
   - docker run -d -p 6379:6379 --name redis7 redis:7
   - bundle exec sidekiq
+    * IMPORTANTE: Verificar siempre que el servidor de redis-server este activo, a traves de Docker Desktop o los comandos proporcionados para que el job de sidekiq pueda realizar su proceso correctamente
 
 3. Frontend(React Dashboard)
 Desde la carpeta raiz:
@@ -145,5 +147,6 @@ Notas finales:
 - Uno de los enfoques de este proyecto fue separar responsabilidades entre el backend, jobs, la simulación y el frontend.
 - Se realizó el dashboard con ReactJS para mayor rapidez de proceso de desarrollo.
 - Para fines de la prueba, se realizo en Ruby puro, además de aumentar ligeramente la probabilidad del estado :operational
+- Verificar siempre el correcto funcionamiento de Redis y de Sidekiq para que los workers muestren los datos correctamente en tiempo real.
 
 Ha sido todo un desafio la creación y levantamiento de este proyecto como prueba para Ruby on Rails. Personalmente me he divertido bastante y agradezco a todo el equipo de Niufoods por la oportunidad de realizar esta aplicación.

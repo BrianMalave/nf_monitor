@@ -5,10 +5,10 @@ require "securerandom"
 API_URL = URI("http://localhost:3000/api/v1/device_reports")
 
 STATUSES = (
-  ["operational"] * 20 + 
-  ["maintenance"] * 3 +    
-  ["failing"] * 3 +        
-  ["offline"] * 3          
+  ["operational"] * 16 + 
+  ["maintenance"] * 4 +    
+  ["failing"] * 4 +        
+  ["offline"] * 4          
 ).freeze
 
 # STATUSES = %w[operational failing maintenance offline]
